@@ -26,16 +26,35 @@ body {
 .headshot {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
     filter: grayscale(100%);
     margin-bottom: 10px;
 }
 
-.contact-info {
-    margin-bottom: 20px;
+.contact-info p,
+.placeholder-content p {
+    margin: 5px 0;
 }
 
 .placeholder-content {
     color: #666;
+}
+
+/* Flexbox and Grid styling */
+@media (min-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header, .contact-info, .placeholder-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot {
+        margin: 0 auto;
+    }
 }
