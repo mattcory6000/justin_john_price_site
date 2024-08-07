@@ -92,3 +92,22 @@ h1 {
         margin-bottom: 0;
     }
 }
+/* Contact Form */
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#contactForm .btn {
+    display: block;
+    width: 100%;
+}
+
+/* Modal */
+.modal-content {
+    padding: 1.5rem;
+}
